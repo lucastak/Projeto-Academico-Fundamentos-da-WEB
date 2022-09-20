@@ -16,6 +16,7 @@ export default function Favoritos() {
     );
 
     const responseValue = await response.json();
+    console.log("respostta", responseValue);
 
     setdados(responseValue);
   }
@@ -28,12 +29,14 @@ export default function Favoritos() {
     loadDados();
   }, []);
 
+  console.log("dados", dados);
+
   return (
     <div className="container">
       <div className={styles["favoritos"]}>
         <h1>Dados</h1>
 
-        {dados.dados.map((element) => {
+        {dados.data.map((element) => {
           return <div key={element.uid}>{element.uf}</div>;
         })}
       </div>
