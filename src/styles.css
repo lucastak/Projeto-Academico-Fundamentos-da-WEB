@@ -12,3 +12,11 @@ body {
   justify-content: center;
   flex-direction: column;
 }
+
+.container {
+  display: flex;
+  margin: 0 auto;
+  width: 80%;
+  justify-content: space-between;
+  align-items: center;
+}

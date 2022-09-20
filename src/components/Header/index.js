@@ -10,7 +10,7 @@ export default function Header() {
         <a className="logo" href="/">
           Filmaria
         </a>
-        <Link to="/" className="favoritos">
+        <Link to="/favoritos" className="favoritos">
           Favoritos
         </Link>
       </div>

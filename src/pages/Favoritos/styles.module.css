@@ -1,0 +1,32 @@
+.favoritos {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.favoritos h1 {
+  text-align: center;
+}
+
+ul {
+  padding: 0;
+}
+
+:global(.Toastify__toast-theme--light) {
+  background-color: blue;
+}
+ul li {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+span {
+  font-size: 23px;
+}
+
+button {
+  margin-left: 10px;
+}

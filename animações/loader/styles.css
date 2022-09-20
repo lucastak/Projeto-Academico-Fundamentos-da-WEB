@@ -1,0 +1,18 @@
+.loader {
+  border: 3px solid black;
+  border-top: 3px solid red;
+  border-radius: 50%;
+  /* mudar o tamanho conforme a necessidade */
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
