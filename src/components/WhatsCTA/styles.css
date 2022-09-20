@@ -1,0 +1,12 @@
+.whatsapp-icon__container {
+  position: fixed;
+  bottom: 200px;
+  right: 14px;
+  z-index: 5;
+}
+
+.whatsapp-icon__button {
+  border: 0;
+  background-color: transparent;
+  outline: 0;
+}

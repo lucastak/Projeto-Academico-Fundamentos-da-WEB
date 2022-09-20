@@ -1,0 +1,16 @@
+.scrolltotop__container {
+  position: fixed;
+  bottom: 150px;
+  right: 14px;
+  z-index: 5;
+}
+
+.scrolltotop__container-off {
+  display: none;
+}
+
+.scrolltotop__button-container {
+  border: 0;
+  background-color: transparent;
+  outline: 0;
+}

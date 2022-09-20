@@ -1,0 +1,150 @@
+.content__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 30px 0 0 109px;
+}
+
+.navigationbody__home-icon,
+.navigationbody__arrow-icon {
+  margin-right: 8px;
+}
+
+.navigationbody__page-text {
+  color: #c4c4c4;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.page__title h1 {
+  margin: 90px 0 40px 0;
+  text-align: center;
+  font-family: Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.1em;
+  color: #292929;
+}
+
+.content__container {
+  display: flex;
+}
+
+.content__buttons-container {
+  border-right: 1px solid #e5e5e5;
+  margin-right: 32px;
+  max-height: 234px;
+  display: flex;
+  flex-direction: column;
+}
+
+.content__button {
+  border: 0;
+  width: 270px;
+  height: 39px;
+  font-size: 16px;
+  line-height: 18px;
+  background-color: #ffffff;
+  color: #7d7d7d;
+  padding: 10px 0 10px 16px;
+  text-align: start;
+  transition: ease-in-out 0.4s;
+}
+
+.content__button:hover {
+  filter: brightness(95%);
+}
+
+.active {
+  background-color: #00c8ff;
+  color: #ffffff;
+  transition: ease-in-out 0.4s;
+}
+
+.active:hover {
+  filter: brightness(90%);
+}
+
+.content__texts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 715px;
+}
+
+.content__texts-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 715px;
+  align-items: center;
+}
+
+.content__title h2 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  margin: 12px 0;
+}
+
+.content__title-form h2 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 23px;
+  color: #110d0f;
+  margin-bottom: 32px;
+  text-align: center;
+  margin: 22px 0 32px 0;
+}
+
+.content__description {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 15px;
+  color: #7d7d7d;
+  margin-right: 120px;
+}
+
+@media screen and (max-width: 768px) {
+  .content__wrapper {
+    margin-left: 16px;
+  }
+
+  .content__container {
+    flex-direction: column;
+  }
+
+  .content__buttons-container {
+    margin-right: 16px;
+    border: 0;
+  }
+
+  .content__button,
+  .active {
+    width: 100%;
+  }
+
+  .content__title {
+    width: 100%;
+    text-align: center;
+  }
+
+  .content__description {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-right: 16px;
+  }
+}

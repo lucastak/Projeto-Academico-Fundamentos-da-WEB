@@ -1,0 +1,28 @@
+.payments-flags__wrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.payments-flags__wrapper img {
+  margin-right: 13px;
+}
+
+.divider {
+  width: 1px;
+  height: 20px;
+  background: #c4c4c4;
+  margin-right: 13px;
+}
+
+@media screen and (max-width: 768px) {
+  .flagpayment-desktop {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .flagpayment-mobile {
+    display: none;
+  }
+}

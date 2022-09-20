@@ -1,0 +1,32 @@
+.header-input-container {
+  position: relative;
+  width: 264px;
+}
+
+.header-input-container input {
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #f0f0f0;
+  padding: 8px 0 8px 12px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #c4c4c4;
+}
+
+.button-search {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  border: none;
+  background: transparent;
+  outline: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 8px;
+}
