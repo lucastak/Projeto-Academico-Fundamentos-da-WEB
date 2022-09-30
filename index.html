@@ -5,15 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <title>Lucas Santos</title>
-    <link rel="stylesheet" href="webfundamentos/../styles/reset.css">
-    <link rel="stylesheet" href="webfundamentos/../styles/styles.css">
+    <!-- <link rel="stylesheet" href="webfundamentos/../styles/reset.css">
+    <link rel="stylesheet" href="webfundamentos/../styles/styles.css"> -->
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
-    <h1>Testeee</h1>
     <section class="topbar__container">
         <span class="topbar__text">
             Este é um projeto acadêmico. As aplicações aqui não representam minhas habilidades de desenvolvimento
         </span>
     </section>
+
+    <label for="checkbox" class="hamburguer__container" onclick="openNav()">
+        <input type="checkbox" id="checkbox"/>
+        <span class="line line-main"></span>
+        <span class="line line-split"></span>
+    </label>
+    <div id="Sidenav" class="sidenav__container">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Teste</a>
+        <a href="#">Teste</a>
+        <a href="#">Teste</a>
+        <a href="#">Teste</a>
+    </div>
+
 </body>
+
+<script src="./scripts/DraweMenu.js"></script>
 </html>

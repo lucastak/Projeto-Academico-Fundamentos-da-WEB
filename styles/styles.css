@@ -1,25 +1,119 @@
 .topbar__container {
-    display: flex;
-    background: yellow;
-    border: 1px solid red;
-    padding: 15px;
-    align-items: center;
-    justify-content: center;
-    animation: pulsetopbar 1s infinite;
-    transition: all ease-in-out 1s;
+  display: flex;
+  background: yellow;
+  border: 1px solid red;
+  padding: 15px;
+  align-items: center;
+  justify-content: center;
+  animation: pulsetopbar 1s infinite;
+  transition: all ease-in-out 1s;
+}
+
+.topbar__text {
+  font-size: 15px;
+  color: red;
+  font-family: sans-serif;
+}
+
+/* drawer  */
+
+#checkbox {
+  display: none;
+}
+
+.hamburguer__container {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.line {
+  position: absolute;
+  width: 20px;
+}
+
+.line-main::before,
+.line-main::after,
+.line-split::after,
+.line-split::before {
+  content: "";
+  position: absolute;
+  width: inherit;
+  height: 2px;
+  background-color: black;
+  transform: transform 0.5s;
+}
+
+.line-main::before {
+  transform: translateY(-7px);
+}
+
+.line-main::after {
+  transform: translateY(7px);
+}
+
+.sidenav__container {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav__container a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav__container a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav__container .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left 0.5s;
+  padding: 16px;
+}
+
+@keyframes pulsetopbar {
+  0% {
+    filter: brightness(0.9);
   }
-  
-  .topbar__text {
-    font-size: 15px;
-    color: red;
-    font-family: sans-serif;
+  100% {
+    filter: brightness(0.7);
   }
-  
-  @keyframes pulsetopbar {
-    0% {
-      filter: brightness(0.9);
-    }
-    100% {
-      filter: brightness(0.7);
-    }
+}
+
+@media screen and (min-width: 768px) {
+  .hamburguer__container {
+    display: none;
   }
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav__container {
+    padding-top: 15px;
+  }
+  .sidenav__container a {
+    font-size: 18px;
+  }
+}
