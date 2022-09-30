@@ -1,0 +1,25 @@
+.topbar__container {
+    display: flex;
+    background: yellow;
+    border: 1px solid red;
+    padding: 15px;
+    align-items: center;
+    justify-content: center;
+    animation: pulsetopbar 1s infinite;
+    transition: all ease-in-out 1s;
+  }
+  
+  .topbar__text {
+    font-size: 15px;
+    color: red;
+    font-family: sans-serif;
+  }
+  
+  @keyframes pulsetopbar {
+    0% {
+      filter: brightness(0.9);
+    }
+    100% {
+      filter: brightness(0.7);
+    }
+  }
