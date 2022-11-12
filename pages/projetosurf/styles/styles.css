@@ -1,0 +1,44 @@
+body {
+  padding: 20px;
+}
+
+.surfist-figure__container {
+  background-image: url(../images/surfista.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 600px;
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: flex-start;
+  padding: 100px 0 0 45px;
+}
+
+.surfist-figure__title {
+  font-family: sans-serif;
+  color: var(--white-900);
+  text-transform: uppercase;
+  font-size: 80px;
+  letter-spacing: 0.5;
+}
+
+.surfist-figure__subtitle {
+  font-family: sans-serif;
+  color: var(--white-900);
+  font-size: 40px;
+  line-height: 25px;
+}
+
+.cards__container {
+  display: flex;
+  gap: 15px;
+}
+
+.cards__card-container {
+  display: flex;
+  flex-direction: column;
+  background: var(--blue-gradiend-one);
+  background: var(--blue-gradiend-two);
+}

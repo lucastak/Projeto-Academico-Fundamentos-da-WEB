@@ -7,8 +7,7 @@
     <title>Lucas Santos</title>
     <!-- <link rel="stylesheet" href="webfundamentos/../styles/reset.css">
     <link rel="stylesheet" href="webfundamentos/../styles/styles.css"> -->
-    <link rel="stylesheet" href="./styles/reset.css">
-    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/main.css">
 </head>
 <body>
     <section class="topbar__container">
@@ -17,18 +16,26 @@
         </span>
     </section>
 
-    <label for="checkbox" class="hamburguer__container" onclick="openNav()">
-        <input type="checkbox" id="checkbox"/>
-        <span class="line line-main"></span>
-        <span class="line line-split"></span>
-    </label>
-    <div id="Sidenav" class="sidenav__container">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#">Teste</a>
-        <a href="#">Teste</a>
-        <a href="#">Teste</a>
-        <a href="#">Teste</a>
-    </div>
+    <header>
+        <nav class="nav__container-desktop">
+            <a class="nav__item" href="./pages/projetoresponsivo/index.html" target="_blank">Projeto Responsivo</a>
+            <a class="nav__item" href="./pages/projetosurf/index.html" target="_blank">Projeto Surf</a>
+        </nav>
+
+        <nav>
+            <label for="checkbox" class="hamburguer__container" onclick="openNav()">
+                <input type="checkbox" id="checkbox"/>
+                <span class="line line-main"></span>
+                <span class="line line-split"></span>
+            </label>
+            <div id="Sidenav" class="sidenav__container">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a class="nav__item" href="./pages/projetoresponsivo/index.html" target="_blank">Projeto responsivo</a>
+                <a class="nav__item" href="./pages/projetosurf/index.html" target="_blank">Projeto Surf</a>
+            </div>
+        </nav>
+    </header>
+
 
 </body>
 

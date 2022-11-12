@@ -1,7 +1,7 @@
 .topbar__container {
   display: flex;
-  background: yellow;
-  border: 1px solid red;
+  background: var(--yellow-900);
+  border: 1px solid var(--red-900);
   padding: 15px;
   align-items: center;
   justify-content: center;
@@ -11,7 +11,7 @@
 
 .topbar__text {
   font-size: 15px;
-  color: red;
+  color: var(--red-900);
   font-family: sans-serif;
 }
 
@@ -43,7 +43,7 @@
   position: absolute;
   width: inherit;
   height: 2px;
-  background-color: black;
+  background-color: var(--black-900);
   transform: transform 0.5s;
 }
 
@@ -94,12 +94,32 @@
   padding: 16px;
 }
 
+header {
+  margin-top: 10px;
+}
+
+.nav__container-desktop {
+  display: flex;
+  justify-content: center;
+}
+
+.nav__item {
+  text-decoration: none;
+  color: var(--black-900);
+}
+
 @keyframes pulsetopbar {
   0% {
     filter: brightness(0.9);
   }
   100% {
     filter: brightness(0.7);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav__container-desktop {
+    display: none;
   }
 }
 
