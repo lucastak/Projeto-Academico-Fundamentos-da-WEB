@@ -101,6 +101,7 @@ header {
 .nav__container-desktop {
   display: flex;
   justify-content: center;
+  gap: 10px;
 }
 
 .nav__item {
