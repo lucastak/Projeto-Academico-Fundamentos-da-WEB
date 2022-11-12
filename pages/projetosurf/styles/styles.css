@@ -1,9 +1,9 @@
-body {
+main {
   padding: 20px;
 }
 
 .surfist-figure__container {
-  background-image: url(../images/surfista.jpg);
+  background-image: url(../images/surfista.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   height: 600px;
@@ -27,7 +27,7 @@ body {
 .surfist-figure__subtitle {
   font-family: sans-serif;
   color: var(--white-900);
-  font-size: 40px;
+  font-size: 19px;
   line-height: 25px;
 }
 
@@ -39,6 +39,144 @@ body {
 .cards__card-container {
   display: flex;
   flex-direction: column;
-  background: var(--blue-gradiend-one);
-  background: var(--blue-gradiend-two);
+  gap: 20px;
+  padding: 20px;
+  background: var(--blue-800);
+  margin-top: 30px;
+}
+
+.cards__card-title {
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--white-900);
+  text-transform: uppercase;
+}
+
+.cards__card-info {
+  font-size: 20px;
+  color: var(--white-900);
+}
+
+.cards__card-button {
+  background-color: var(--blue-300);
+  padding: 10px;
+  color: var(--white-900);
+  max-width: 50%;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  margin-top: 20px;
+}
+
+.cards__card-button:hover {
+  filter: brightness(95%);
+}
+
+.cards__card-button:active {
+  filter: brightness(110%);
+}
+
+.infos__container {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.infos__col {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  min-height: 285px;
+  position: relative;
+}
+
+.infos__col-text {
+  margin-top: 55px;
+}
+
+.infos__col-title {
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--black-900);
+  margin-bottom: 20px;
+}
+
+.infos__image {
+  margin-top: 10px;
+  height: 230px;
+}
+
+.infos__col-button,
+.infos__col-person {
+  position: absolute;
+  bottom: 0;
+}
+
+.infos__col-depo {
+  padding: 40px;
+  background-color: var(--blue-100);
+  font-style: italic;
+}
+
+.infos__col-button {
+  text-decoration: none;
+  color: var(--blue-300);
+}
+
+.bottom-nav__container {
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+  background-color: var(--blue-100);
+}
+
+.bottom-nav__list-container {
+  display: flex;
+  gap: 30px;
+}
+
+.bottom-nav__list-item {
+  text-decoration: none;
+  color: var(--blue-800);
+}
+
+.bottom-nav__container li:first-child a {
+  color: var(--black-900);
+}
+
+.header__container {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--blue-900);
+}
+
+.header__logo h1 {
+  font-size: 30px;
+  color: var(--white-900);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.header__logo h1 strong {
+  color: var(--blue-300);
+}
+
+.header__logo,
+.header__list-item {
+  text-decoration: none;
+}
+
+.header__list {
+  display: flex;
+  gap: 20px;
+}
+
+.header__list li:first-child a {
+  color: var(--blue-800);
+}
+
+.header__list-item {
+  color: var(--white-900);
 }
