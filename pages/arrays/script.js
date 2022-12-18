@@ -7,8 +7,28 @@ function getMovies(url) {
 
 function criarElemento(filme) {
   const card = document.createElement("div");
+  let contador = 0;
+  let rating = 0;
   card.innerHTML = `
-        <span>${filme.titulo}</span>
+        <div class="card-movies__container">
+            <h2>${filme.titulo}</h2>
+            ${filme.opinioes
+              .map((element) => {
+                contador++;
+                rating += element.rating;
+                rating;
+              })
+              .join("")}
+
+            <span class="card-movies__stars">${
+              rating / contador
+            } estrelas</span>
+            
+            <br/>
+            <span>${
+              filme.classificacao == 0 ? "Livre" : `${filme.classificacao}`
+            }</span>
+        </div>
     `;
 
   return card;
