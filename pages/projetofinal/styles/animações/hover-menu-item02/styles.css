@@ -1,0 +1,34 @@
+.menu-desktop-item-link {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  margin: 20px;
+}
+
+.menu-desktop-item-link::before,
+.menu-desktop-item-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #e65454;
+  transform: scaleX(0);
+  transition: transform 0.2s;
+}
+
+.menu-desktop-item-link::before {
+  top: -3px;
+  transform-origin: left;
+}
+
+.menu-desktop-item-link::after {
+  bottom: -3px;
+  transform-origin: right;
+}
+
+.menu-desktop-item-link:hover::after,
+.menu-desktop-item-link:hover::before {
+  transform: scaleX(1);
+}

@@ -1,0 +1,32 @@
+.menu-desktop-item-link {
+  color: black;
+  position: relative;
+  text-decoration: none;
+}
+
+.menu-desktop-item-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 100%;
+
+  width: 0;
+  height: 2px;
+
+  margin: 1px 0 0 0;
+
+  background-color: #000;
+  border-radius: 2px;
+  border-radius: 2px;
+  transition: all 0.3s ease-in-out;
+}
+
+/*
+se quiser para quando o item estiver ativo
+como não estamos em um menu e ele não fica com .active na classe, não funciona dentro desse arquivo
+.menu-desktop-item-link.active::after
+*/
+
+.menu-desktop-item-link:hover::after {
+  width: 100%;
+}

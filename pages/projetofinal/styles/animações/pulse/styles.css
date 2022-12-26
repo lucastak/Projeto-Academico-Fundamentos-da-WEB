@@ -1,0 +1,28 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+}
+
+.pulse {
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: shadow-pulse 1s infinite;
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+}
+
+@keyframes shadow-pulse {
+  0% {
+    box-shadow: 0 0 0 0px rgba(67, 0, 222, 0.8);
+  }
+  100% {
+    box-shadow: 0 0 0 35px rgba(58, 9, 194, 0);
+  }
+}
