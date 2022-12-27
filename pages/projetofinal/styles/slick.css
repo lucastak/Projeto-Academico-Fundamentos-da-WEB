@@ -1,0 +1,48 @@
+.slider__wrapper {
+  overflow: hidden;
+}
+
+.slick-dotted.slick-slider {
+  height: 400px;
+}
+
+.slick-list::after {
+  content: " ";
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  width: 4000px;
+  right: 100%;
+  background-color: white;
+}
+
+.slider__item img {
+  width: 100%;
+  height: 100%;
+}
+
+.slick-next {
+  right: 3%;
+}
+
+.slick-prev {
+  left: 3%;
+  z-index: 1;
+}
+
+.slick-next:before,
+.slick-prev:before {
+  font-size: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .slick-next {
+    right: 6%;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .slick-next {
+    right: 8%;
+  }
+}
