@@ -1,4 +1,19 @@
 
+.header__conteiner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__conteiner h1 {
+  margin-left: 30px;
+  font-size: 2em;
+}
+
+.header__image {
+  width: 150px;
+}
+
 .topbar__container {
   display: flex;
   background: var(--yellow-900);
