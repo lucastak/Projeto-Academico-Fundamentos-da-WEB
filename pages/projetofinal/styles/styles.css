@@ -100,7 +100,7 @@ header {
   padding: 15px;
 }
 
-.nav__container-desktop {
+.nav__container-desktop, .nav__container-footer {
   display: flex;
   justify-content: start;
   gap: 10px;
