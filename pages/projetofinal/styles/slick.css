@@ -40,6 +40,10 @@
   .slick-next {
     right: 6%;
   }
+
+  .slider__wrapper {
+    margin-top: 0;
+  }
 }
 
 @media screen and (max-width: 460px) {

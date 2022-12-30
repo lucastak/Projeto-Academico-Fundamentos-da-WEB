@@ -131,6 +131,12 @@ header {
   justify-content: center;
 }
 
+.nav__container-mobile {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
 .nav__item {
   text-decoration: none;
   color: var(--white);
@@ -203,6 +209,17 @@ main {
     flex-direction: row;
     justify-content: space-between;
   }
+
+  .logo__container {
+    padding: 15px;
+  }
+
+  .box__item {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -216,6 +233,16 @@ main {
 
   .nav__item:active {
     filter: brightness(150%);
+  }
+
+  .sidenav__container {
+    z-index: 2;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .logo__container h1 {
+    font-size: 20px;
   }
 }
 
