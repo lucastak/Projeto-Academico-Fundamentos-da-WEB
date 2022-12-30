@@ -111,6 +111,34 @@ header {
   color: var(--black-900);
 }
 
+.main__container {
+  margin: 0 auto;
+  min-width: 320px;  /* Responsividade do texto */ 
+  max-width: 1200px; /* Responsividade do texto */ 
+}
+
+p {
+  padding: 10px;
+  text-align: justify;
+}
+
+.box__item {
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+}
+
+.box__item p {
+  display: flex;
+  align-items: center;
+}
+
+.nav__footer {
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+}
+
 @keyframes pulsetopbar {
   0% {
     filter: brightness(0.9);
