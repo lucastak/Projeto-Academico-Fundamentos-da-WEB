@@ -149,6 +149,10 @@ p {
   text-align: justify;
 }
 
+a {
+  text-align: center;
+}
+
 main {
   margin: 0 auto;
   min-width: 320px; /* Responsividade do texto */
@@ -224,6 +228,7 @@ main {
     margin: 0;
     padding: 0;
   }
+
 }
 
 @media screen and (min-width: 768px) {
