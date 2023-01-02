@@ -4,7 +4,7 @@ $(".slider__container").slick({
   infinite: true,
   speed: 300,
   autoplay: true,
-  autoplaySpeed: 300000,
+  autoplaySpeed: 3000,
   pauseOnHover: true,
   slidesToShow: 1,
   slidesToScroll: 1,
