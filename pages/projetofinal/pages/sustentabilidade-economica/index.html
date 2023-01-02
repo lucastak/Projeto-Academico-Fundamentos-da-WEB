@@ -4,23 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>page 01</title>
+    <title>Sustentabilidade Ecônomica</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" 
+    integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+     integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../../styles/main.css">
 </head>
 <body>
     <header>
-        <a class="logo__container" href="./index.html" aria-label="button">
+        <a class="logo__container" href="../../index.html" aria-label="button">
             <img src="../../imgs/recicle-icon.png" alt="logo do site" />
-            <h1>Sustentabilidade Ambiental</h1>
+            <h1>Sustentabilidade Ecônomica</h1>
         </a>
         <div class="nav__wrapper">
             <nav class="nav__container-desktop">
-                <a class="nav__item" href="/index.html">Página Inicial</a>
-                <a class="nav__item" href="./pages/page01/index.html" >Sustentabilidade Econômica</a>
-                <a class="nav__item" href="./pages/page02/index.html">Sustentabilidade Social</a>
+                <a class="nav__item" href="../../index.html">Página Inicial</a>
+                <a class="nav__item" href="../sustentabilidade-ambiental/index.html" >Sustentabilidade Ambiental</a>
+                <a class="nav__item" href="../sustentabilidade-social/index.html">Sustentabilidade Social</a>
             </nav>
 
-            <nav>
+            <nav class="nav__container-mobile">
                 <label for="checkbox" class="hamburguer__container" onclick="openNav()">
                     <input type="checkbox" id="checkbox"/>
                     <span class="line line-main"></span>
@@ -28,9 +34,9 @@
                 </label>
                 <div id="Sidenav" class="sidenav__container">
                     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                    <a class="nav__item" href="/index.html">Página Inicial</a>
-                    <a class="nav__item" href="/pages/page02/index.html">Sustentabilidade Econômica</a>
-                    <a class="nav__item" href="./pages/page03/index.html">Sustentabilidade Social</a>
+                    <a class="nav__item" href="../../index.html">Página Inicial</a>
+                    <a class="nav__item" href="../sustentabilidade-ambiental/index.html" >Sustentabilidade Ambiental</a>
+                    <a class="nav__item" href="../sustentabilidade-social/index.html">Sustentabilidade Social</a>
                 </div>
             </nav>
         </div>
@@ -40,7 +46,9 @@
 
         <section class="slider__wrapper">
             <ul class="slider__container">
-                <li class="slider__item"><img src="/imgs/tree.png" alt="Banner" /></li>
+                <li class="slider__item"><img src="../../imgs/tree.png" alt="Banner" /></li>
+                <li class="slider__item"><img src="../../imgs/tree.png" alt="Banner" /></li>
+                <li class="slider__item"><img src="../../imgs/tree.png" alt="Banner" /></li>
             </ul>
         </section>
 
@@ -52,12 +60,12 @@
             <div class="box__container">
 
                 <div class="box__item--pages">
-                    <img src="/imgs/world.png" alt="..." />
+                    <img src="../../imgs/tree.png" alt="..." />
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quam, nesciunt nisi magnam quasi impedit necessitatibus quod quas? Dignissimos eum quidem sunt ex cumque, nesciunt illum error odio possimus in! Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto deleniti at voluptate cumque deserunt blanditiis, ex debitis soluta iure nam alias quam tempora! Inventore iste eligendi nisi, vitae porro blanditiis.</p>
                 </div>
 
                 <div class="box__item--pages">
-                    <img src="/imgs/handshake.jpg" alt="..." />
+                    <img src="../../imgs/tree.png" alt="..." />
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quam, nesciunt nisi magnam quasi impedit necessitatibus quod quas? Dignissimos eum quidem sunt ex cumque, nesciunt illum error odio possimus in! Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic nobis quia recusandae natus sunt rerum excepturi alias nulla et ipsa maiores, voluptate minus asperiores accusamus fuga quam, eius amet necessitatibus!</p>
                 </div>
 
@@ -67,7 +75,7 @@
 
         <section>
             <div class="wrapper__item--pages">   
-                <img src="/imgs/leaf.png" alt="..." />
+                <img src="../../imgs/leaf.png"alt="..." />
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quam, nesciunt nisi magnam quasi impedit necessitatibus quod quas? Dignissimos eum quidem sunt ex cumque, nesciunt illum error odio possimus in! Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic nobis quia recusandae natus sunt rerum excepturi alias nulla et ipsa maiores, voluptate minus asperiores accusamus fuga quam, eius amet necessitatibus! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus ipsa cupiditate perferendis aliquam ratione sequi nobis inventore numquam ullam animi, reprehenderit, deserunt commodi sapiente neque vel placeat? Eaque, laboriosam porro.</p>
             </div>
 
@@ -79,12 +87,18 @@
         <div class="nav__footer">
             <nav class="nav__container-footer">
                 <a class="nav__item" href="#top" >Voltar ao início</a>
-                <a class="nav__item" href="./pages/page02/index.html">Sustentabilidade Econômica</a>
-                <a class="nav__item" href="./pages/page03/index.html">Sustentabilidade Social</a>
+                <a class="nav__item" href="../sustentabilidade-ambiental/index.html" >Sustentabilidade Ambiental</a>
+                <a class="nav__item" href="../sustentabilidade-social/index.html">Sustentabilidade Social</a>
             </nav>
         </div> 
     </footer>
 
 </body>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" 
+    integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="../../scripts/DrawerMenu.js"></script>
+    <script src="../../scripts/Slick.js"></script>
 </html>

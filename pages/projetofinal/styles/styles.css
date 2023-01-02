@@ -111,6 +111,7 @@ header {
 .nav__container-footer {
   display: flex;
   margin: 0 auto;
+  flex-wrap: wrap;
   width: 100%;
   gap: 10px;
   border: 1px solid white;
@@ -172,7 +173,7 @@ main {
   border-radius: 10px;
 }
 
-.box__container{
+.box__container {
   display: flex;
 }
 
@@ -194,7 +195,7 @@ main {
 }
 
 .nav__footer {
-  padding: 20px;
+  padding-top: 20px;
   display: flex;
   justify-content: center;
 }
@@ -228,7 +229,6 @@ main {
     margin: 0;
     padding: 0;
   }
-
 }
 
 @media screen and (min-width: 768px) {
