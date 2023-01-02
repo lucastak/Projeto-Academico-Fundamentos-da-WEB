@@ -3,6 +3,11 @@
   margin-top: 40px;
 }
 
+.slider__container div,
+.slider__container li {
+  height: 100%;
+}
+
 .slick-dotted.slick-slider {
   height: 400px;
 }

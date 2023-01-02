@@ -111,6 +111,7 @@ header {
 .nav__container-footer {
   display: flex;
   margin: 0 auto;
+  flex-wrap: wrap;
   width: 100%;
   gap: 10px;
   border: 1px solid white;
@@ -149,6 +150,10 @@ p {
   text-align: justify;
 }
 
+a {
+  text-align: center;
+}
+
 main {
   margin: 0 auto;
   min-width: 320px; /* Responsividade do texto */
@@ -166,6 +171,10 @@ main {
 
 .slider__item img {
   border-radius: 10px;
+}
+
+.box__container {
+  display: flex;
 }
 
 .box__item {
@@ -186,7 +195,7 @@ main {
 }
 
 .nav__footer {
-  padding: 20px;
+  padding-top: 20px;
   display: flex;
   justify-content: center;
 }
@@ -257,4 +266,27 @@ main {
 
 /* page 01 */
 
-/* fim page 02 */
+.box__item--pages img {
+  display: block;
+  margin: auto;
+  width: 300px;
+  height: 200px;
+  border-radius: 5px;
+}
+
+.wrapper__item--pages img {
+  display: block;
+  margin: auto;
+  padding: 10px;
+  width: 98%;
+  height: 300px;
+  border-radius: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .box__container {
+    flex-direction: column;
+  }
+}
+
+/* fim page 01 */
