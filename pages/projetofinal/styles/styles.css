@@ -196,6 +196,10 @@ main {
   transform: rotate(15deg);
 }
 
+.logo__container img {
+  animation: loading 8s linear infinite;
+}
+
 .box__item p {
   display: flex;
   align-items: center;
@@ -205,6 +209,15 @@ main {
   padding-top: 20px;
   display: flex;
   justify-content: center;
+}
+
+@keyframes loading {
+	0% {
+		transform: rotate(0);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
 }
 
 @keyframes pulsetopbar {
