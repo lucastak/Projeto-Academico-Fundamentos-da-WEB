@@ -156,6 +156,10 @@ p {
   font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
 }
 
+strong {
+  font-weight: bold
+}
+
 a {
   text-align: center;
 }
@@ -186,7 +190,7 @@ main {
 .box__item {
   display: flex;
   flex-direction: row;
-  margin: 20px;
+  margin: 15px;
   padding: 15px;
 }
 
@@ -212,9 +216,13 @@ main {
 }
 
 .nav__footer {
-  padding-top: 20px;
+  padding-top: 10px;
   display: flex;
   justify-content: center;
+}
+
+.reference__footer {
+  text-align: center;
 }
 
 @keyframes loading {
@@ -255,6 +263,7 @@ main {
     margin: 0;
     padding: 0;
   }
+
 }
 
 @media screen and (min-width: 768px) {
@@ -290,7 +299,7 @@ main {
   }
 }
 
-/* page 01 */
+/* pages */
 
 .box__item--pages img {
   display: block;
@@ -309,10 +318,14 @@ main {
   border-radius: 15px;
 }
 
+.box__image {
+  text-align: center;
+}
+
 @media screen and (max-width: 768px) {
   .box__container {
     flex-direction: column;
   }
 }
 
-/* fim page 01 */
+/* fim pages */
