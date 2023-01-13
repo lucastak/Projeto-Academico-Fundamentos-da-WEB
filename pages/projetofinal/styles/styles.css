@@ -210,7 +210,7 @@ main {
   animation: loading 8s linear infinite;
 }
 
-.box__item p {
+.box__item p{
   display: flex;
   align-items: center;
 }
@@ -282,12 +282,14 @@ main {
   .sidenav__container {
     z-index: 2;
   }
+
 }
 
 @media screen and (max-width: 420px) {
   .logo__container h1 {
     font-size: 20px;
   }
+
 }
 
 @media screen and (max-height: 450px) {
@@ -318,8 +320,9 @@ main {
   border-radius: 15px;
 }
 
-.box__image {
+.box__image cite {
   text-align: center;
+  display: block;
 }
 
 @media screen and (max-width: 768px) {
